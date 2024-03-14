@@ -1,0 +1,89 @@
+*,
+*:after, /*последним дочерним элементом*/
+*:before { /*первым дочерним элементом*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*учитывать любые границы и отступы в значениях*/
+}
+
+
+/* Body */
+.body {
+    background-color: antiquewhite;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+
+
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+/* Header */
+.headeer__title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.header__form {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    gap: 10px;
+}
+
+/* Main */
+.main__form {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.main__form > div {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.main__form > div:last-child {
+    margin-bottom: 0;
+}
+
+.main__chech {
+    background-color: #e6dfdfb4;
+}
+
+.main__img {
+    margin: 4px;
+    position: absolute;
+    right: 20px;
+    width: 20px;
+}
+
+
+
+/* Footerr */
+.footer {
+    font-size: 14px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-count {
+    text-align: center;
+    padding: 5px;
+}
+.filters {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
