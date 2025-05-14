@@ -1,0 +1,120 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: antiquewhite;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.header__title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.header__form {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    gap: 10px;
+}
+
+.main__form {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.main__form > div {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.main__form > div:last-child {
+    margin-bottom: 0;
+}
+
+.main__chech {
+    background-color: #e6dfdfb4;
+    position: relative;
+    padding-right: 50px;
+}
+
+.main__img {
+    margin: 4px;
+    position: absolute;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.footer {
+    font-size: 14px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-count {
+    text-align: center;
+    padding: 5px;
+}
+
+.filters {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.active-button {
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(141, 134, 134, 0.66);
+    color: white;
+    opacity: 1;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}

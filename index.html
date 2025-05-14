@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>To-do List</title>
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="stules.css" />
+</head>
+<body class="body">
+
+<header>
+    <div>
+        <h1 class="header__title">Дела</h1>
+        <div class="header__form">
+            <img src="svg/chevron-down.svg" alt="стрелочка" width="30px" />
+            <input id="add__input" class="form-control" type="text" placeholder="Что должно быть сделано" />
+            <button id="add__button" type="submit" class="btn btn-primary">Добавить</button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="main__form" id="todo__list"></div>
+</main>
+
+
+<footer class="footer">
+    <div>
+        <button id="all__button" type="button" class="btn-sm">
+            Все <span class="todo-count">(0)</span>
+        </button>
+        <button id="active__button" type="button" class="btn-sm">Активные</button>
+        <button id="completed__button" type="button" class="btn-sm">Завершенные</button>
+    </div>
+    <button id="delete__button" type="submit" class="btn-sm">Сделанные удалить</button>
+</footer>
+
+
+<div id="editModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <h4>Редактировать задачу</h4>
+        <input type="text" id="editInput" class="form-control" />
+        <button id="saveEdit" class="btn btn-success mt-2">Сохранить</button>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
